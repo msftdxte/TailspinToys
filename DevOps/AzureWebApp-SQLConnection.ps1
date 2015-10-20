@@ -20,4 +20,3 @@ $connectionStrings = ( `
 
 
 Set-AzureWebsite -Name $websiteName -Slot $websiteSlotName -ConnectionStrings $connectionStrings
- 
