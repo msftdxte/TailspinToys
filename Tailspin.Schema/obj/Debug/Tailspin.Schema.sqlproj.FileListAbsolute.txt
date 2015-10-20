@@ -3,3 +3,8 @@ C:\citc\TailspinToys\Tailspin.Schema\sql\debug\Tailspin.Schema.dll
 C:\citc\TailspinToys\Tailspin.Schema\sql\debug\Tailspin.Schema.pdb
 C:\citc\TailspinToys\Tailspin.Schema\obj\Debug\Tailspin.Schema.dll
 C:\citc\TailspinToys\Tailspin.Schema\obj\Debug\Tailspin.Schema.pdb
+C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Schema\sql\debug\Tailspin.Schema.dacpac
+C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Schema\sql\debug\Tailspin.Schema.dll
+C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Schema\sql\debug\Tailspin.Schema.pdb
+C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Schema\obj\Debug\Tailspin.Schema.dll
+C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Schema\obj\Debug\Tailspin.Schema.pdb

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Configuration;
 using Tailspin.Model;
 using Tailspin.Infrastructure;
 using StructureMap;
@@ -25,7 +26,22 @@ namespace Tailspin.Web {
             ); 
         }
 
+        public class DemoSiteConfigInitializer :
+            Microsoft.ApplicationInsights.Extensibility.IContextInitializer
+        {
+            public void Initialize(Microsoft.ApplicationInsights.DataContracts.TelemetryContext context)
+            {
+                context.Properties["tags"] = WebConfigurationManager.AppSettings["tags"];
+            }
+        }
+
         protected void Application_Start() {
+            Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.Active.InstrumentationKey =
+                System.Web.Configuration.WebConfigurationManager.AppSettings["iKey"];
+
+            Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.Active.ContextInitializers.Add(new DemoSiteConfigInitializer());
+
+
             RegisterRoutes(RouteTable.Routes);
             Bootstrapper.ConfigureStructureMap();
 
@@ -34,6 +50,8 @@ namespace Tailspin.Web {
                 );
 
             ViewEngines.Engines.Add(new TailspinViewEngine());
+
+
 
 
         }
