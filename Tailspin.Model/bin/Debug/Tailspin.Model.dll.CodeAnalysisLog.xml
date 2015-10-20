@@ -6,7 +6,7 @@
    <Modules>
     <Module Name="tailspin.model.dll">
      <Messages>
-      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Warning">Because assembly 'Tailspin.Model.dll' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
       </Message>
      </Messages>
@@ -17,7 +17,7 @@
          <Members>
           <Member Name="#ValidationErrors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Order" File="Order.cs" Line="34">Change 'Order.ValidationErrors' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
@@ -28,7 +28,7 @@
          <Members>
           <Member Name="#.ctor(System.String,System.String,System.String,System.Boolean,System.Decimal,System.Int32,System.DateTime,System.Boolean,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="Product.cs" Line="66">'Product.Product(string, string, string, bool, decimal, int, DateTime, bool, bool)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Product..ctor(String, String, String, Boolean, Decimal, Int32, DateTime, Boolean, Boolean)&#xD;&#xA;Product.OnCreated():Void</Issue>
              <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="Product.cs" Line="66">'Product.Product(string, string, string, bool, decimal, int, DateTime, bool, bool)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Product..ctor(String, String, String, Boolean, Decimal, Int32, DateTime, Boolean, Boolean)&#xD;&#xA;Product.set_AllowBackOrder(Boolean):Void&#xD;&#xA;Product.OnInventoryFlagsChanged():Void</Issue>
              <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="Product.cs" Line="66">'Product.Product(string, string, string, bool, decimal, int, DateTime, bool, bool)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Product..ctor(String, String, String, Boolean, Decimal, Int32, DateTime, Boolean, Boolean)&#xD;&#xA;Product.set_AmountOnHand(Int32):Void&#xD;&#xA;Product.OnInventoryChanged():Void</Issue>
@@ -38,35 +38,35 @@
           </Member>
           <Member Name="#CrossSells" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="Product.cs" Line="137">Change 'Product.CrossSells' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Descriptors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="Product.cs" Line="138">Change 'Product.Descriptors' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Images" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="Product.cs" Line="135">Change 'Product.Images' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Recommended" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="Product.cs" Line="139">Change 'Product.Recommended' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#RelatedProducts" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="Product.cs" Line="136">Change 'Product.RelatedProducts' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
@@ -77,28 +77,28 @@
          <Members>
           <Member Name="#CrossSells" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="ProductCategory.cs" Line="28">Change 'ProductCategory.CrossSells' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Descriptors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="ProductCategory.cs" Line="29">Change 'ProductCategory.Descriptors' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Products" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="ProductCategory.cs" Line="30">Change 'ProductCategory.Products' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#RelatedProducts" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="ProductCategory.cs" Line="27">Change 'ProductCategory.RelatedProducts' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
@@ -109,7 +109,7 @@
          <Members>
           <Member Name="#Products" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Product" File="ProductList.cs" Line="15">Change 'ProductList.Products' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
@@ -120,14 +120,14 @@
          <Members>
           <Member Name="#Items" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Shipment" File="Shipment.cs" Line="15">Change 'Shipment.Items' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ShippingOptions" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Shipment" File="Shipment.cs" Line="16">Change 'Shipment.ShippingOptions' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
@@ -138,7 +138,7 @@
          <Members>
           <Member Name="#Items" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Customer" File="ShoppingCart.cs" Line="22">Change 'ShoppingCart.Items' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
@@ -149,7 +149,7 @@
          <Members>
           <Member Name="#TransactionErrors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\kegjerst\Source\Repos\TailspinToys\Tailspin.Model\Transaction" File="Transaction.cs" Line="51">Change 'Transaction.TransactionErrors' to be read-only by removing the property setter.</Issue>
             </Message>
            </Messages>
@@ -158,7 +158,7 @@
         </Type>
         <Type Name="UserBehavior" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Status="Active" Created="2015-10-20 16:20:08Z" FixCategory="NonBreaking">
+          <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Status="Active" Created="2015-10-20 16:36:05Z" FixCategory="NonBreaking">
            <Issue Name="NotFlagsNoZeroValue" Certainty="95" Level="CriticalError">Add a member to 'UserBehavior' that has a value of zero with a suggested name of 'None'.</Issue>
           </Message>
          </Messages>
